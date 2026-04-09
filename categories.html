@@ -1,0 +1,21 @@
+---
+layout: page
+title: Categories
+---
+
+{% assign sorted_cats = site.categories | sort %}
+{% for category in sorted_cats %}
+  <div class="category-section">
+    <h2 id="{{ category[0] }}">{{ category[0] }}</h2>
+    <ul class="post-list">
+      {% for post in category[1] %}
+      <li>
+        <div class="post-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </div>
+        <p class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}

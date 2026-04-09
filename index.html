@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+
+<h1 class="page-heading">Latest Posts</h1>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <div class="post-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% for cat in post.categories %}
+        <a class="category-tag" href="{{ '/categories.html' | relative_url }}#{{ cat }}">{{ cat }}</a>
+      {% endfor %}
+    </div>
+    <p class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
+    {% if post.excerpt %}
+    <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
