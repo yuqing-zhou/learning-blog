@@ -121,3 +121,19 @@ footer {
 
 /* Page heading */
 .page-heading { font-size: 1.8rem; margin-bottom: 1.5rem; }
+
+/* Table of contents */
+.toc {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+.toc strong { display: block; margin-bottom: 0.5rem; }
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0.25rem 0; }
+.toc li.h3 { padding-left: 1rem; }
+.toc a { color: #0366d6; }
+.toc a:hover { text-decoration: underline; }
