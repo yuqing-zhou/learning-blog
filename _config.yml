@@ -5,7 +5,7 @@ author: Yuqing Zhou
 # If repo is named username.github.io, leave baseurl empty.
 # If repo is a project repo (e.g. learning-blog), set baseurl: "/learning-blog"
 baseurl: "/learning-blog"
-url: ""
+url: "https://yuqing-zhou.github.io"
 
 markdown: kramdown
 highlighter: rouge
